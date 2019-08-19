@@ -1,27 +1,24 @@
+/*-- Fonts --*/
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
-html {
+/*-- HTML & Body Styles --*/
+html, body {
     font-size: 10px;
     background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rF63UXPMWj3otndy6/videoblocks-abstract-stained-background-seamless-video-cute-pastel-color_s9ucq9tiz_thumbnail-full01.png) bottom center;
     background-size: cover;
-}
-
-body, html {
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     font-family: 'Press Start 2P', cursive;
+    min-height: 100%;
 }
 
-kbd {
-    font-family: 'Press Start 2P', cursive;
-}
-
+/*-- Key Styles --*/
 .keys {
-    display: flex;
-    flex: 1;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .key {
@@ -29,9 +26,9 @@ kbd {
     border-radius: .5rem;
     margin: 1rem;
     font-size: 1.5rem;
-    padding: 1rem .5rem;
+    padding: 0.5rem;
     transition: all .07s ease;
-    width: 10rem;
+    width: 15rem;
     text-align: center;
     color: white;
     background: rgba(255, 173, 235, 0.842);
@@ -46,6 +43,8 @@ kbd {
 kbd {
     display: block;
     font-size: 4rem;
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgba(255, 173, 235, 0.842);
 }
 
 .sound {
@@ -53,4 +52,37 @@ kbd {
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: #f700ff;
+}
+
+h3 {
+    color: #fafafa;
+    margin: auto;
+    padding: 1rem;
+}
+
+/*-- Media Queries --*/
+@media screen and (min-width: 360px) and (max-width: 812px) and (orientation: portrait){
+    .key {
+        width: 9rem;
+        height: auto;
+    }
+    kbd {
+        font-size: 2rem;
+    }
+    .sound {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 812px) and (orientation: landscape){
+    .key {
+        width: 9rem;
+        height: auto;
+    }
+    kbd {
+        font-size: 2rem;
+    }
+    .sound {
+        font-size: 0.8rem;
+    }
 }
