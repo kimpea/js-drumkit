@@ -4,7 +4,7 @@
 /*-- HTML & Body Styles --*/
 html, body {
     font-size: 10px;
-    background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rF63UXPMWj3otndy6/videoblocks-abstract-stained-background-seamless-video-cute-pastel-color_s9ucq9tiz_thumbnail-full01.png) bottom center;
+    background-image: url("background.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
